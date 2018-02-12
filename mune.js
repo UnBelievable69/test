@@ -105,7 +105,7 @@ function applyElementMarkup(jqElem, allowedTypes) {
             child = mta_highlight_groups[h];
             next = jqElem;
             first = true;
-            while (typeof(child) != "none") {
+            while (typeof(child) != "undefined") {
                 applyWordMarkup(next, fnName, targetClass, (first ? h : next.text().trim()));
                 first = false;
                 if (typeof(child) == "object") {
