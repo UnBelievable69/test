@@ -84,7 +84,7 @@ function applyElementMarkup(jqElem, allowedTypes) {
             var targetClass = -1;
             var fnName = "";
             var first = true;
-            while (typeof(child) != "none") {
+            while (typeof(child) != "undefined") {
                 fnName = fnName + (first ? h : next.text().trim());
                 first = false;
                 if (typeof(child) == "object") {
