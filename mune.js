@@ -11,7 +11,7 @@ var typeToClass = [
 ]
 
 
-var mta_highlight = (mh === none) ? {} : mh;
+var mta_highlight = (mh === undefined) ? {} : mh;
 var mta_highlight_groups = {} // Stores { coroutine : { '.' : { 'yield' = 2, 'resume' = 2 } } }
 
 // First, we compile a nested dict of Library functions with . seperators and their class
