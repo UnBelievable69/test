@@ -60,7 +60,7 @@
 
 .MTA_STR_CLIENT_EV a {
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .MTA_STR_CLIENT_EV a:hover {
@@ -69,7 +69,7 @@
 
 .MTA_STR_SERVER_EV a {
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .MTA_STR_SERVER_EV a:hover {
