@@ -54,7 +54,7 @@ function applyWordMarkup(jqElem, fnName, type, childName) {
         case "MTA_PLN_SERVER":
         case "MTA_STR_CLIENT_EV":
         case "MTA_STR_SERVER_EV":
-            jqElem.html(jqElem.html().replace(childName, "<span class='mta_highlight " + className + "'><a class='mta_highlight' href='https://wiki.multitheftauto.com/wiki/" + fnName + "'>" + childName + "</a></span>"));
+            jqElem.html(jqElem.html().replace(childName, "<span class='mta_highlight " + className + "'><a class='mta_highlight' style='text-decoration: none;' href='https://wiki.multitheftauto.com/wiki/" + fnName + "'>" + childName + "</a></span>"));
             break;
         case "LUA_PLN":
             jqElem.html(jqElem.html().replace(childName, "<span class='mta_highlight " + className + "'><a class='mta_highlight' href='http://www.lua.org/manual/5.1/manual.html#pdf-" + fnName + "'>" + childName + "</a></span>"))
