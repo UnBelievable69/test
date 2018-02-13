@@ -7,10 +7,10 @@ function applyWordMarkup(a, b, c, d) {
 		case "MTA_PLN_SERVER":
 		case "MTA_STR_CLIENT_EV":
 		case "MTA_STR_SERVER_EV":
-			a.html(a.html().replace(d, "<span class='mta_highlight " + className + "'><a class='mta_highlight' href='https://wiki.multitheftauto.com/wiki/" + b + "'>" + d + "</a></span>"));
+			a.html(a.html().replace(d, "<span class='mta_highlight " + className + "'><a class='mta_highlight' href='https://wiki.multitheftauto.com/wiki/" + b + "' style='text-decoration: none;'>" + d + "</a></span>"));
 			break;
 		case "LUA_PLN":
-			a.html(a.html().replace(d, "<span class='mta_highlight " + className + "'><a class='mta_highlight' href='http://www.lua.org/manual/5.1/manual.html#pdf-" + b + "'>" + d + "</a></span>"))
+			a.html(a.html().replace(d, "<span class='mta_highlight " + className + "'><a class='mta_highlight' href='http://www.lua.org/manual/5.1/manual.html#pdf-" + b + "' style='text-decoration: none;'>" + d + "</a></span>"))
 	}
 }
 
