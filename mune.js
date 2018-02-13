@@ -11,7 +11,7 @@ var typeToClass = [
 ]
 
 
-var mta_highlight = (mh === none) ? {} : mh;
+var mta_highlight = (mh === undefined) ? {} : mh;
 var mta_highlight_groups = {} // Stores { coroutine : { '.' : { 'yield' = 2, 'resume' = 2 } } }
 
 // First, we compile a nested dict of Library functions with . seperators and their class
@@ -84,7 +84,7 @@ function applyElementMarkup(jqElem, allowedTypes) {
             var targetClass = -1;
             var fnName = "";
             var first = true;
-            while (typeof(child) != "none") {
+            while (typeof(child) != "undefined") {
                 fnName = fnName + (first ? h : next.text().trim());
                 first = false;
                 if (typeof(child) == "object") {
@@ -105,7 +105,7 @@ function applyElementMarkup(jqElem, allowedTypes) {
             child = mta_highlight_groups[h];
             next = jqElem;
             first = true;
-            while (typeof(child) != "none") {
+            while (typeof(child) != "undefined") {
                 applyWordMarkup(next, fnName, targetClass, (first ? h : next.text().trim()));
                 first = false;
                 if (typeof(child) == "object") {
